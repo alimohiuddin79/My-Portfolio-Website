@@ -1,0 +1,536 @@
+/* Fonts */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+/* Header */
+
+ul{
+    text-align: center;
+}
+
+/* Navbar */
+
+.navbar{
+    padding: 80px 0;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nav-item{
+    margin: 10px 22px;
+}
+
+
+.nav-link{
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    letter-spacing: 2.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: border-color 1s;
+}
+
+.nav-link:hover{
+    color: white;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.dropdown-menu{
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.dropdown-item{
+    padding: 6px 24px;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(212, 211, 211, 0.76);
+}
+
+.btn-nav{
+    position: absolute;
+    right: 6%;
+    border-radius: 22px;
+    padding: 8px 20px;
+    margin-right: 42px;
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s step-start, letter-spacing 1s;
+}
+
+.btn-nav:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 3.2px;
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 1200px){
+    .nav-item{
+        margin: 10px 12px;
+    }
+    
+    .nav-link{
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 991px){
+    .vertical-navbar{
+        list-style-type: none;
+        padding-top: 108px;
+        margin: 0;
+        width: 100%;
+        color: black;
+        background-color: #f1f1f1;
+    }
+    .nav-link {
+        display: inline-block;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: border-color 1s;
+    }
+    .nav-link:hover{
+        color: black;
+        border-color: rgba(0, 0, 0, 1);
+    }
+    .btn-nav{
+        margin: auto 21px;
+    }  
+}
+
+/* Home Page */
+
+#Homepage{
+    background: linear-gradient(45deg, #0F0202, #0A0404, #070311);
+    width: 100%;
+}
+
+.hero-container{
+    padding: 8% 8%;
+}
+
+.outter-border{
+    width: 284px;
+    height: 100%;
+    text-align: center;
+    border: 4px solid;
+    border-color: rgba(111, 114, 109, 0.8);
+    border-radius: 50%;
+    margin-left: 54%;
+}
+
+.hero-image{
+    width: 260px;
+    border-radius: 50%;
+    margin: 8px
+}
+
+.hero-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    padding-top: 7%;
+    text-align: left;
+}
+
+.hero-heading-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+}
+
+
+/* Responsive Homepage */
+
+@media (max-width: 1540px){
+    .outter-border{
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 1200px){
+    .outter-border{
+        margin-left: 26%;
+    }
+    .hero-heading{
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 991px){
+    .bg-change{
+        background-color: white;
+    }
+    .hero-container{
+        padding: 160px 60px 80px;
+    }
+    .outter-border{
+        width: 264px;
+        margin-left: 0%;
+        text-align: left;
+        /* margin-top: 100px; */
+    }
+    .hero-image{
+        width: 240px;
+    }
+    .hero-heading{
+        padding-top: 10%;
+    }
+}
+
+
+/* Skills(White Background) */
+
+#skills{
+    background: white;
+}
+
+.skills-container{
+    padding: 4% 8% 4%;
+}
+
+.skill-title-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    margin-top: 80px;
+}
+
+.skill-hr{
+    background: transparent;
+    width: 180px;
+    height: 0;
+    margin: auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px;
+    border-color: black;
+    border-style: dotted;
+    border-bottom-width: 10px;
+}
+
+.icons{
+    font-size: 4.2rem;
+    padding: 8% 20%;
+    margin-top: 40px;
+    border-radius: 12px;
+    transition: background-color 1s, color 1s;
+}
+
+.icons:hover{
+    background-color: black;
+    color: white;
+}
+
+.icon-heading{
+    margin: 10px 0;
+}
+
+.skill-bar{
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    background-color: grey;
+    opacity: 0.5;
+    width: 50%;
+    height: 8px;
+}
+
+.skill-fill-intermediate{
+    border-radius: 10px;
+    background-color: black;
+    width: 50%;
+    height: 8px;
+}
+
+.skill-fill-basic{
+    border-radius: 10px;
+    background-color: black;
+    width: 36%;
+    height: 8px;
+}
+
+.skill-ball{
+    position: relative;
+    left: 96%;
+    bottom: 2.5px;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: background-color 1s, border-color 1s;
+}
+
+
+.skill-text{
+    margin-top: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+/* Portfolio(Gradient Background) */
+
+#portfolio{
+    background: linear-gradient(45deg, #0F0202, #0A0404, #070311);
+}
+
+.portfolio-container{
+    padding: 4% 20% 4%;
+}
+
+.portfolio-title-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    padding-top: 80px;
+    color: white;
+}
+
+.portfolio-hr{
+    background: transparent;
+    width: 300px;
+    height: 0;
+    margin: auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px;
+    border-color: white;
+    border-style: dotted;
+    border-bottom-width: 10px;
+}
+
+.card-col{
+    padding: 0 20px;
+    margin: 40px 0;
+}
+
+
+.portfolio-card-title{
+    margin: 10px 0;
+
+}
+
+.portfolio-card{
+    background-color: white;
+    border-radius: 22px;
+    padding: 10px 0;
+}
+
+.showcase-image{
+    width: 70%;
+    border-radius: 20px;
+    transition: width 1s;
+}
+
+.showcase-image:hover{
+    width: 82%;
+}
+
+
+/* About Me(White Background) */
+
+#about-me{
+    background: white;
+}
+
+.about-container{
+    padding: 4% 26% 4%;
+}
+
+.about-title-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    margin-top: 80px;
+}
+
+.about-hr{
+    background: transparent;
+    width: 280px;
+    height: 0;
+    margin: auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px;
+    border-color: black;
+    border-style: dotted;
+    border-bottom-width: 10px;
+}
+
+.about-text{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+/* Responsive text for mobile */
+
+@media (max-width: 900px){
+    .about-text{
+        text-align: center;
+    }
+}
+
+
+/* Certificates(Gradient Background) */
+
+#certificates{
+    background: linear-gradient(45deg, #0F0202, #0A0404, #070311);
+}
+
+.certificate-container{
+    padding: 4% 15% 4%;
+}
+
+.certificate-title-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    padding-top: 80px;
+    color: white;
+}
+
+.certificate-hr{
+    background: transparent;
+    width: 360px;
+    height: 0;
+    margin: auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px;
+    border-color: white;
+    border-style: dotted;
+    border-bottom-width: 10px;
+}
+
+.carousel-item{
+    padding: 0 10%;
+}
+
+.certificate-image{
+    width: 70%;
+    transition: width 1s;
+}
+
+.certificate-image:hover{
+    width: 80%;
+}
+
+/* Contact(white Background) */
+
+#contact{
+    background: white;
+}
+
+.contact-container{
+    padding: 4% 24% 4%;
+}
+
+.contact-title-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    margin-top: 80px;
+}
+
+.contact-hr{
+    background: transparent;
+    width: 240px;
+    height: 0;
+    margin: auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 4px;
+    border-color: black;
+    border-style: dotted;
+    border-bottom-width: 10px;
+}
+
+.contact-label{
+    letter-spacing: 2.8px;
+}
+
+.btn-contact{
+    margin: 28px 0;
+    border-radius: 22px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s step-start, letter-spacing 1s;
+}
+
+.btn-contact:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 3.2px;
+}
+
+
+@media (max-width: 900px){
+    .contact-container{
+        padding: 4% 14% 4%;
+    }
+}
+
+/* Footer */
+
+footer{
+    background: linear-gradient(45deg, #0F0202, #0A0404, #070311);
+    color: white;
+    margin: 0;
+    padding: 40px 0 10px;
+}
+
+.social-icons{
+    text-decoration: none;
+    color: white; 
+    font-size: 3rem;
+    margin: 20px 40px;
+    border-radius: 6px;
+    transition: color 1s, padding 1s, background-color 1s;
+}
+
+.social-icons:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+

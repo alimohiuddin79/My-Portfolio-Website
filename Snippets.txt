@@ -1,0 +1,36 @@
+// Blue Neon Background
+
+Color 1: 0F0202 position 20%
+
+Color 2: 02070C position 50% 
+
+Color 3: 070311 position 80%
+
+
+// Bloody Red Neon Background
+
+Color 1: 0F0202 position 20%
+
+Color 2: 0A0404 position 50% 
+
+Color 3: 070311 position 80%
+
+
+// Icons
+// HTML5
+<i class="fa-brands fa-html5"></i>
+
+// CSS3
+<i class="fa-brands fa-css3-alt"></i>
+
+// Figma 
+<i class="fa-brands fa-figma"></i>
+
+// Bootstrap 
+<i class="fa-brands fa-bootstrap"></i>
+
+// Python
+<i class="fa-brands fa-python"></i>
+
+// Javascript 
+<i class="fa-brands fa-js"></i>
