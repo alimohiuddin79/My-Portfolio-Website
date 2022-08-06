@@ -52,17 +52,19 @@ ul{
 }
 
 .dropdown-menu{
-    padding: 10px 0;
     border-radius: 10px;
     background-color: white;
 }
 
 .dropdown-item{
-    padding: 6px 24px;
+    padding: 10px 24px;
+    margin: 0;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .dropdown-item:hover{
-    background-color: rgba(212, 211, 211, 0.76);
+    background-color: black;
+    color: white;
 }
 
 
@@ -80,8 +82,10 @@ ul{
 
 @media (max-width: 991px){
     .vertical-navbar{
+        text-align: left;
         list-style-type: none;
         padding-top: 108px;
+        padding-left: 8%;
         margin: 0;
         width: 100%;
         color: black;
